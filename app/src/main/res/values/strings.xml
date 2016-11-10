@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">WeatherApp</string>
-    <string name="weather_api_key">f46f62442611cdc087b629f6e87c7374</string>
+    <string name="weather_api_key">APPID=f46f62442611cdc087b629f6e87c7374</string>
+    <string name="weather_api_domain">http://api.openweathermap.org/data/2.5/</string>
+    <string name="la_city_id">3882428</string>
+    <string name="city_prompt">Choose a city</string>
+    <string-array name="city_arrays">
+        <item>Paris</item>
+        <item>Nairobi</item>
+        <item>Beijing</item>
+        <item>Milan</item>
+    </string-array>
 </resources>

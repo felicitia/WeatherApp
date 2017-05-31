@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
-        android:id="@+id/spinner_city_name"
+        android:id="@+id/cityname_spinner"
         android:prompt="@string/city_prompt"
         android:entries="@array/city_arrays"
         />
@@ -28,30 +28,20 @@
         android:ems="15"
         android:hint="City ID"
         android:id="@+id/city_id_input"
-        android:layout_below="@+id/spinner_city_name"
+        android:layout_marginTop="39dp"
+        android:maxLines="1"
+        android:textSize="40sp"
+        android:layout_below="@+id/cityname_spinner"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:maxLines="1"/>
-
-    <CheckBox
-        android:text="Search by City ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/check_city_name"
-        android:layout_alignLeft="@+id/check_city_name"
-        android:layout_alignStart="@+id/check_city_name"
-        android:layout_marginTop="20dp"
-        android:id="@+id/check_city_id"
-
-        />
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:text="Search by City Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="46dp"
         android:id="@+id/check_city_name"
+        android:textSize="30sp"
         android:layout_below="@+id/city_id_input"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -60,11 +50,24 @@
         android:text="Search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/check_city_id"
+        android:id="@+id/search_btn"
+        android:textSize="40sp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:text="Search by City ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/check_city_id"
+        android:textSize="30sp"
+        android:layout_below="@+id/check_city_name"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/search"
-        android:onClick="onSearchClick"/>
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

@@ -8,99 +8,146 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.usc.yixue.weatherapp.WeatherDisplayActivity">
+    tools:context="edu.usc.yixue.weatherapp.DisplayActivity">
 
     <TextView
-        android:text="Current Weather (Fahrenheit)"
+        android:text="Current Weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/textView"
-        android:textSize="20dp"/>
+        android:textSize="30sp"/>
 
     <TextView
         android:text="City Name:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/textView2" />
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:id="@+id/show_city_name" />
-
-    <TextView
-        android:text="City ID:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="33dp"
-        android:id="@+id/textView4" />
-
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignLeft="@+id/show_city_name"
-        android:layout_alignStart="@+id/show_city_name"
-        android:id="@+id/show_city_id" />
-
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/show_city_name"
-        android:layout_toRightOf="@+id/show_city_name"
-        android:layout_toEndOf="@+id/show_city_name"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/city_name_temp" />
-
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/show_city_id"
-        android:layout_alignRight="@+id/city_name_temp"
-        android:layout_alignEnd="@+id/city_name_temp"
-        android:id="@+id/city_id_temp" />
-
-    <TextView
-        android:text="My Fav City: Los Angeles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="31dp"
-        android:id="@+id/textView5" />
-
-    <TextView
-        android:text="Temperature:"
+        android:text="Los Angeles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="28dp"
-        android:id="@+id/textView6" />
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:textColor="#4286f4"/>
 
     <TextView
-        android:layout_width="50dp"
+        android:text="Temperature:"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView6"
-        android:layout_alignLeft="@+id/show_city_id"
-        android:layout_alignStart="@+id/show_city_id"
-        android:id="@+id/fav_city_temp" />
+        android:id="@+id/textView7"
+        android:textSize="30sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_city_temp"
+        android:textSize="30sp"
+        android:textColor="#4286f4"
+        android:layout_width="120dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_city_name"
+        android:textSize="30sp"
+        android:textColor="#4286f4"
+        android:layout_above="@+id/textView6"
+        android:layout_alignLeft="@+id/city_name_temp"
+        android:layout_alignStart="@+id/city_name_temp" />
+
+    <TextView
+        android:text="Temperature:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="30sp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/city_id_temp"
+        android:textSize="30sp"
+        android:textColor="#4286f4"
+        android:layout_width="120dp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/city_name_temp"
+        android:layout_alignStart="@+id/city_name_temp" />
+
+    <TextView
+        android:text="City ID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="30sp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Temperature:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="30sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/city_name_temp"
+        android:textSize="30sp"
+        android:textColor="#4286f4"
+        android:layout_width="120dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/show_city_id"
+        android:textSize="30sp"
+        android:layout_width="150dp"
+        android:textColor="#4286f4"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/fav_city_temp"
+        android:layout_toEndOf="@+id/fav_city_temp" />
+
+    <TextView
+        android:text="My Favorite City:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:id="@+id/textView5"
+        android:textSize="30sp"
+        android:layout_below="@+id/show_city_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
